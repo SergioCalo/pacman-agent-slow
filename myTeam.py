@@ -22,6 +22,7 @@
 
 import random
 import contest.util as util
+import time
 
 from contest.captureAgents import CaptureAgent
 from contest.game import Directions
@@ -72,6 +73,7 @@ class ReflexCaptureAgent(CaptureAgent):
         """
         Picks among the actions with the highest Q(s,a).
         """
+        time.sleep(5)
         actions = game_state.get_legal_actions(self.index)
 
         # You can profile your evaluation time by uncommenting these lines
